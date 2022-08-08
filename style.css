@@ -1,0 +1,40 @@
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 90%;
+    margin-top: 18px;
+    display: inline-flex;
+  }
+
+.left {
+    flex: 50%;
+    padding: 10px;
+    text-align: left;
+    font-weight: 100;
+    line-height: 34px;
+    width: 90%;
+    margin-top: 18px;
+}
+.right {
+    flex: 50%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.bottom {
+    margin-bottom: auto;
+}
+
+
+@media only screen and (min-device-width: 480px){
+    body {
+        background-color: bisque;
+        color: olivedrab;
+
+    }
+
+}
