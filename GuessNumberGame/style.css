@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: lemonchiffon; 
+  }
+  
+h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+  
+.form, .resultParas {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+
+    }
+#userGuess {
+    margin-left: 20px;
+    color:#9462bb;
+    border-radius: 20%;
+}
+
+.button {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em  0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius: 20%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif,sans-serif;
+    font-weight:300;
+    color:#9462bb;
+    text-shadow : 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+    margin-left: 20px;
+    }
+
+.button:hover {
+    border-color: rgb(10, 249, 249);
+    color:rgb(10, 249, 249)
+    };
+
+    @media all and (max-width:30em){
+        .button{
+        display:block;
+        margin:0.2em auto;
+        }
+        }
