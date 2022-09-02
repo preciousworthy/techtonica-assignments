@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add A Book</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -12,30 +14,32 @@
         <a href="./index.html">Back to Library</a>
         <hr>
     
-        <form id="newBook" name="newBook" class="form" action="http://localhost:6066/API/books" method="post">
+        <form class="form" action="http://localhost:6066/addbook" method="post">
             <div class="form-group">
                 <label for="ISBN">ISBN</label>
                 <input class="form-control" name="isbn">
             </div>
-    
+            <br>
             <div class="form-group">
                 <label for="Title">Title</label>
                 <input class="form-control" name="title">
             </div>
-    
+            <br>
             <div class="form-group">
                 <label for="Author">Author</label>
                 <input class="form-control" name="author">
             </div>
-
+            <br>
             <div class="form-group">
-                <label for="Type">Type of Book</label>
-                <input class="form-control" name="type">
+                <label for="Format">Format</label>
+                <input class="form-control" name="format">
             </div>
-
+            <br>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>

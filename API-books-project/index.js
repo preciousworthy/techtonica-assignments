@@ -22,11 +22,6 @@ app.get('/', (req, res) => {
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/addbook', (req, res) => {
-    res.render('newBook');
-    res.sendFile('/addbook.html');
-})
-
 app.post('/addbook', (req, res) => {
     const newBook = req.body;
     console.log(newBook);
@@ -35,6 +30,19 @@ app.post('/addbook', (req, res) => {
     res.send('Book is added to the database');
 });
 
+// deleting a book from our API
+app.delete('/:isbn', (req, res) => {
+    const isbn = req.params.isbn;
+
+    BOOKS = BOOKS.filter(i => {
+        if(i.isbn !== isbn) {
+            return true;
+        }
+        return false;
+    });
+
+    res.send('Book is deleted');
+})
 //creating /api/books endpoint - GET REQUEST
 app.get('/api/books', (req, res) => {
     res.json(BOOKS);
