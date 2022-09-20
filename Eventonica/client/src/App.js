@@ -1,5 +1,6 @@
 import calendar from "./calendar.png";
 import Footer from "./components/footer";
+import Users from "./components/users";
 import "./App.css";
 
 function App() {
@@ -12,46 +13,9 @@ function App() {
 
       <main>
         <div className="user-and-events">
-          <section className="user-management">
-            <h2>User Management</h2>
+          <Users />
 
-            <ul id="users-list">
-              {/* display all existing Users here */}
-              <li>...</li>
-            </ul>
 
-            <div>
-              <h3>Add User</h3>
-              <form id="add-user" action="#">
-                <fieldset>
-                  <label>Name</label>
-                  <input type="text" id="add-user-name" />
-                </fieldset>
-                {/* Add more form fields here */}
-                <input type="submit" value="Add" />
-              </form>
-            </div>
-
-            <div>
-              <h3>Delete User</h3>
-              <form id="delete-user" action="#">
-                <fieldset>
-                  <label>User ID</label>
-                  <input type="text" id="delete-user-id" />
-                </fieldset>
-                <input type="submit" />
-              </form>
-            </div>
-          </section>
-
-          <section className="event-management">
-            <h2>Event Management</h2>
-            <div>
-              <h3>All Events</h3>
-              <ul id="events-list">
-                {/* Display all Events here */}
-                <li>...</li>
-              </ul>
 
               <h3>Add Event</h3>
               <form id="add-event" action="#">
@@ -67,8 +31,8 @@ function App() {
                 <input type="submit" />
               </form>
             </div>
-          </section>
-        </div>
+         
+
 
         <div>
           <h3>Delete Event</h3>
