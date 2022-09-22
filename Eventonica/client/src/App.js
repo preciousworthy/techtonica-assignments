@@ -1,6 +1,7 @@
 import calendar from "./calendar.png";
 import Footer from "./components/footer";
 import Users from "./components/users";
+import Events from "./components/Events";
 import "./App.css";
 
 function App() {
@@ -14,36 +15,9 @@ function App() {
       <main>
         <div className="user-and-events">
           <Users />
-
-
-
-              <h3>Add Event</h3>
-              <form id="add-event" action="#">
-                <fieldset>
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    id="add-event-name"
-                    placeholder="Virtual corgi meetup"
-                  />
-                </fieldset>
-                {/* Add more form fields here */}
-                <input type="submit" />
-              </form>
-            </div>
-         
-
-
-        <div>
-          <h3>Delete Event</h3>
-          <form id="delete-event" action="#">
-            <fieldset>
-              <label>Event ID</label>
-              <input type="number" min="1" id="delete-event-id" />
-            </fieldset>
-            <input type="submit" />
-          </form>
+          <Events />
         </div>
+         
 
         <aside className="search-toolbar">
           <div>

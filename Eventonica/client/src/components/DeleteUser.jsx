@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const DeleteUser = ({ handleDeleteUser }) => {
+    //set state of delete user function
     const [deleteUserId, setUserIdToDelete] = useState("");
     
     return (

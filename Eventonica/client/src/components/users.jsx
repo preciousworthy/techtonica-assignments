@@ -27,6 +27,7 @@ const Users = () => {
   }
 
   const handleDeleteUser = (DeleteUser) => {
+    //filtered users
   const deleteUsers = users.filter((user) => user.id !== DeleteUser);
   setUsers(deleteUsers)
   }
